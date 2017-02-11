@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h2>Contact Form</h2>
+<hr>
+
+<h3>Fill in this form to contact website owners</h3>
+
+<form id="email_form" method="POST" action="">
+    <label class="lhead">Name</label><label class="lreq">(Required)</label><br>
+    <label>Please enter your full name</label><br>
+    <input type="text" name="fname"/><br>
+    
+    <label class="lhead">E-mail</label><label class="lreq">(Required)</label><br>
+    <label>Please enter your e-mail address</label><br>
+    <input type="text" name="email"/><br>
+    
+    <label class="lhead">Subject</label><label class="lreq">(Required)</label><br>
+    <label>Please enter the subject for your message</label><br>
+    <input type="text" name="subject"/><br>
+    
+    <label class="lhead">Message</label><label class="lreq">(Required)</label><br>
+    <label>Please enter the message you would like to send</label><br>
+    <textarea cols="50" rows="4" name="msg"></textarea><br>
+    
+    <button class="my_but">Send</button>
+</form>
+
+{% endblock %}

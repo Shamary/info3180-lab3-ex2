@@ -1,3 +1,42 @@
 body {
     padding-top: 50px;
 }
+
+
+label{
+    padding-bottom: 10px;
+}
+
+input,textarea{
+    margin-bottom: 13px;
+}
+
+textarea{
+    resize: none;
+}
+
+h3{
+    padding-bottom: 17px;
+}
+
+.lhead{
+    font-weight: bold;
+    display:inline-block;
+    
+    padding-right: 8px;
+}
+
+.lreq{
+    color:red;
+    display: inline-block;
+}
+
+.my_but{
+    background-color: #0077C2;
+    color:white;
+    
+    padding:10px 20px 10px 20px;
+    
+    border-radius:3px;
+    border:none;
+}
