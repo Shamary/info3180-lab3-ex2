@@ -6,12 +6,14 @@ This file creates your application.
 """
 
 from app import app
-from flask import render_template, request, redirect, url_for
+from flask import render_template, request, redirect, url_for, flash
 import smtplib
 
 ###
 # Routing for your application.
 ###
+
+app.secret_key="email_key";
 
 @app.route('/')
 def home():
@@ -28,6 +30,9 @@ def about():
 def contact():
     if(request.method=='POST'):
         send_email(request.form['fname'],request.form['email'],request.form['subject'],request.form['msg']);
+        
+        flash('Email successfully sent');
+        return redirect(url_for('home'));
     """Render the website's contact page."""
     return render_template('contact.html')
 
